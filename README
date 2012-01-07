@@ -1,0 +1,25 @@
+This is a project for configuration vim, which is the best text editor for
+me.
+
+To install this configuration, you must go with following steps:
+
+    git clone http://github.com/username/dotvim.git ~/.vim
+    update_submodule.sh
+
+To add a plugin, (this is for me)
+
+    git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
+    git add .
+    git commit -m "Install Fugitive.vim bundle as a submodule."
+    git push
+    
+Upgrading a plugin bundle
+
+    cd ~/.vim/bundle/fugitive
+    git pull origin master
+
+Upgrading all bundled plugins
+ 
+    git submodule foreach git pull origin master
+or
+    update_all_plugins.sh
