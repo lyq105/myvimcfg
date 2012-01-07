@@ -1,28 +1,36 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim ÔÚwindowsÏÂµÄ±àÂëÉèÖÃ¡£date
+" vim Ã”ÃšwindowsÃÃ‚ÂµÃ„Â±Ã Ã‚Ã«Ã‰Ã¨Ã–ÃƒÂ¡Â£date
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=utf-8
 set fileencodings=utf-8,chinese,latin-1
 set fileencoding=utf-8
 
-"½â¾ö²Ëµ¥ÂÒÂë
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
-"½â¾öconsoleÊä³öÂÒÂë
+"Â½Ã¢Â¾Ã¶Â²Ã‹ÂµÂ¥Ã‚Ã’Ã‚Ã«
+"source $VIMRUNTIME/delmenu.vim
+"source $VIMRUNTIME/menu.vim
+"Â½Ã¢Â¾Ã¶consoleÃŠÃ¤Â³Ã¶Ã‚Ã’Ã‚Ã«
 language messages zh_CN.utf-8
+
+set rtp+=~/.vim/bundle/The-NERD-tree/
+
+filetype off
+filetype plugin indent off
+syn off
+set nocp
+"call pathogen#infect()
 
 syn on
 set nu
 set go=''
 "set go+=m
 set nobackup
-set guifont=Monaco:h11
-set guifontwide=Yahei_Mono:h11
+"set guifont=Monaco:h11
+"set guifontwide=Yahei_Mono:h11
 set tabstop=2
 set shiftwidth=2
 set completeopt=menu
 
-au GUIEnter * simalt ~x
+"au GUIEnter * simalt ~x
 map <C-F10> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR> 
 
 "colo morning
