@@ -1,3 +1,33 @@
 [submodule "bundle/Vim-LaTeX"]
 	path = bundle/Vim-LaTeX
 	url = https://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git
+[submodule "bundle/snipMate"]
+	path = bundle/snipMate
+	url = https://github.com/vim-scripts/snipMate.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/vimwiki"]
+	path = bundle/vimwiki
+	url = https://github.com/vim-scripts/vimwiki.git
+[submodule "bundle/The-NERD-tree"]
+	path = bundle/The-NERD-tree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/The-NERD-commenter"]
+	path = bundle/The-NERD-commenter
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
+[submodule "bundle/Gundo"]
+	path = bundle/Gundo
+	url = https://github.com/vim-scripts/Gundo.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/vim-scripts/fugitive.vim.git
+[submodule "bundle/ZenCoding"]
+	path = bundle/ZenCoding
+	url = https://github.com/vim-scripts/ZenCoding.vim.git
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = https://github.com/vim-scripts/pyflakes.vim.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
