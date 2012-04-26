@@ -25,6 +25,7 @@ set go=''
 "set go+=m
 set nobackup
 "set guifont=Monaco:h11
+set guifont=Monospace\ 11
 "set guifontwide=Yahei_Mono:h11
 set tabstop=2
 set shiftwidth=2
