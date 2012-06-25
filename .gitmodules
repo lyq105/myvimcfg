@@ -37,3 +37,6 @@
 [submodule "bundle/xptemplate"]
 	path = bundle/xptemplate
 	url = git://github.com/drmingdrmer/xptemplate.git
+[submodule "bundle/OminiCppComplete"]
+	path = bundle/OminiCppComplete
+	url = http://github.com/vim-scripts/OmniCppComplete.git

@@ -24,8 +24,8 @@ set nu
 set go=''
 "set go+=m
 set nobackup
-"set guifont=Monaco:h11
-set guifont=Monospace\ 11
+set guifont=Monaco\ 12
+"set guifont=Monospace\ 11
 "set guifontwide=Yahei_Mono:h11
 set tabstop=2
 set shiftwidth=2
@@ -138,3 +138,24 @@ let g:gundo_preview_bottom = 1
 
 set laststatus=1
 set statusline=%<%F\ %h%m%r%=%-14.(%l,%c%V%)%P%=%{fugitive#statusline()}
+au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
+" configure tags - add additional tags here or comment out not-used ones
+set tags+=~/.vim/tags/cpp_stl
+set tags+=~/.vim/tags/gl
+set tags+=~/.vim/tags/sdl
+set tags+=~/.vim/tags/qt4
+" build tags of your own project with Ctrl-F12
+map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+" OmniCppComplete
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+" automatically open and close the popup menu / preview window
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+set completeopt=menuone,menu,longest,preview
