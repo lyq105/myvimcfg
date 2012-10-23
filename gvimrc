@@ -60,11 +60,14 @@ nnoremap <silent> <C-F12> <ESC>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+
 let OminiCpp_GlobalScopeSearch=1
 let OminiCpp_DisplayMode=1
 let OminiCpp_ShowAccess =1
-let OminiCpp_DefaultNamespaces=["std"]
+let OminiCpp_DefaultNamespaces=["std","libmesh"]
 let OmniCpp_ShowScopeInAbbr = 0
 
 set tags+=~/.tags
 set tags+=./tags
+set tags+=~/.vim/tags/cpp_stl
+set tags+=~/.vim/tags/libmesh_tags
+
 
 "" Setting of VimWiki plugin
 
