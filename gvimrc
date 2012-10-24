@@ -57,8 +57,8 @@ nnoremap <silent> <C-F8> :TlistToggle<CR>
 nnoremap <silent> <C-F12> <ESC>:!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 "" Setting of OminiCpp plugin
-let OminiCpp_GlobalScopeSearch=1
-let OminiCpp_DisplayMode=1
+let OminiCpp_GlobalScopeSearch=0
+let OminiCpp_DisplayMode=0
 let OminiCpp_ShowAccess =1
 let OminiCpp_DefaultNamespaces=["std","libmesh"]
 let OmniCpp_ShowScopeInAbbr = 0
